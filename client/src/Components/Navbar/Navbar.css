@@ -1,75 +1,96 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     border: 1px solid gray;
     z-index: 100;
     width: 100vw;
     height: 10vh;
     display: flex;
-    /* padding: 10px 40px 0 40px; */
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     position: fixed;
 }
-.logo{
-    width: 180px;
-    height: 45px;
+
+.logo {
+    width: 25%;
+    max-width: 180px;
+    height: auto;
 }
 
-.link{
+.link {
     text-decoration: none;
-    font-size: large;
+    font-size: medium;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: black;
     transition: .3s all;
-    
 }
 
-.linkContainer{
+.linkContainer {
     display: flex;
-    gap: 20px;
+    gap: 2vw;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
 
-.login{
-    padding: 10px 30px 10px 10px;
+.login, .logout {
+    padding: 1vh 3vw;
     background: #FF7716;
     color: white;
     border-radius: 20px;
     font-weight: 500;
-}
-
-.logout{
-    padding: 10px 30px 10px 10px;
-    background: #242D62;
-    color: white;
-    border-radius: 20px;
-    font-weight: 500;
-    border: none;
     text-align: center;
     cursor: pointer;
 }
 
-.link:hover{
+.link:hover {
     text-decoration: underline;
     scale: 1.1;
 }
 
-.cartN{
+.cartN {
     background-color: red;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 50px;
-    color: white    ;
+    padding: 0.5vh 1vw;
+    border-radius: 50%;
+    color: white;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 20%;
+        max-width: 180px;
+        margin-bottom: 1vh;
+    }
+
+    .linkContainer {
+        width: 100%;
+    }
+
+    .link{
+        font-size: smaller;
+    }
+
+    .login, .logout {
+        padding: 1vh 2vw;
+        margin-bottom: 1vh;
+    }
+}
+
+/* Add more media queries as needed */

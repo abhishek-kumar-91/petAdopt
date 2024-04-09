@@ -1,4 +1,4 @@
-.aContainer{
+.aContainer {
     width: 100vw;
     padding-top: 10vh;
     display: flex;
@@ -6,7 +6,7 @@
     padding: 40px;
 }
 
-.titleA{
+.titleA {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,28 @@
     margin-top: 20px;
 }
 
-.cardContent{
+.cardContent {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .aContainer {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .titleA {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .cardContent {
+        padding: 10px; /* Adjust padding for smaller screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
 }

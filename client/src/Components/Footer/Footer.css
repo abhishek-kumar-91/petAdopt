@@ -1,14 +1,24 @@
-.footerContainer{
-    width: 100vw;
-    height: 10vh;
+.footerContainer {
+    width: 100%;
+    min-height: 10vh; /* Ensure a minimum height for visibility */
     background-color: #242D62;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: small;
+    padding: 0 5%; /* Use percentage for padding to adjust based on viewport width */
+    font-size: 0.8em; /* Adjust font size for smaller screens */
     letter-spacing: 1px;
     font-weight: 100;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        justify-content: center; /* Center align items vertically */
+        text-align: center; /* Center align text */
+        padding: 5% 0; /* Adjust vertical padding */
+        font-size: 0.7em; /* Further reduce font size for smaller screens */
+    }
 }

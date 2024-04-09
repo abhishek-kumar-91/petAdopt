@@ -1,8 +1,8 @@
-.marginG{
+.marginG {
     padding-top: 10vh;
 }
 
-.loginContainer{
+.loginContainer {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -11,7 +11,7 @@
     padding: 40px;
 }
 
-.formContainer{
+.formContainer {
     width: 70%;
     height: 100%;
     background-color: white;
@@ -21,33 +21,33 @@
     box-shadow: 2px 2px 10px rgb(194, 194, 194);
 }
 
-.box{
+.box {
     width: 50%;
     height: 100%;
 }
 
-.box img{
+.box img {
     width: 100%;
     height: 100%;
     background-size: contain;
     background-position: center;
 }
 
-.box2{
+.box2 {
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.formBox{
+.formBox {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.formBox input{
+.formBox input {
     width: 100%;
     height: 60px;
     outline: none;
@@ -55,7 +55,7 @@
     font-size: large;
 }
 
-.formBox button{
+.formBox button {
     height: 60px;
     border: none;
     font-size: large;
@@ -64,6 +64,30 @@
     cursor: pointer;
 }
 
-.formBox button:hover{
+.formBox button:hover {
     background-color: #fc8f41;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%; 
+       /* Adjust container width for smaller screens */
+    }
+
+    .box {
+        display: none;
+        width: 100%;
+         /* Hide image box on smaller screens */
+    }
+
+    .box2 {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .formBox input,
+    .formBox button {
+        font-size: medium; /* Adjust font size for smaller screens */
+    }
 }
