@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import {Link} from "react-router-dom"
+import Contact from '../Components/Contact/Contact'
 function Home() {
   return (
     <div className='homeContainer'>
@@ -37,14 +38,14 @@ function Home() {
       </div>
 
 
-      <div class="video-container">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bDJKs6r___g?si=w1fUqDzoA_C2WwOo&amp;start=7" frameborder="0" allowfullscreen loading='lazy'></iframe>
-    </div>
+      
 
 
     <div className='banner'>
         <img src='/public/userBanner.jpg' loading='lazy'/>
     </div>
+
+    <Contact />
     </div>
   )
 }

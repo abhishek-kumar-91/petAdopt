@@ -71,7 +71,7 @@
 .howWork{
     width: 100vw;
     height: 450px;
-    background-color: #F4F5F6;
+    
     position: relative;
     bottom: 258px;
     display: flex;
@@ -131,9 +131,9 @@
 
 .banner{
     width: 100vw;
-    height: 262px;
+    height: 300px;
     position: absolute;
-    top: 166vh;
+    top: 150vh;
 }
 
 .banner img{

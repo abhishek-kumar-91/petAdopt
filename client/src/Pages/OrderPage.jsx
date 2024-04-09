@@ -49,8 +49,8 @@ function OrderPage({isLoggedIn}) {
         });
   
         if (response.ok) {
-          toast.success('Order Placed Successful!');
-          navigate("/");
+          toast.success('Please collect your pet at our nearest store!');
+          navigate("/success");
           dispatch(clearCart())
           
         } else{

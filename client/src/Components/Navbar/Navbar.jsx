@@ -42,6 +42,8 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
       <div className='linkContainer'>
         { isLoggedIn && <h6>Welcome, {data[0]}</h6>
         }
+        <Link to="/" className='link'>Home</Link>
+        <Link to="/about-us" className='link'>About Us</Link>
         <Link to="/adopt-a-pet" className='link'><img src='/public/download.svg' />Adopt a pet</Link>
         <Link to="/cart" className='link'><FaCartPlus />Cart <h5 className='cartN'>{cartNumber?.length}</h5></Link>
         {isLoggedIn ? (

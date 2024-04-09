@@ -11,6 +11,8 @@ import React, { useEffect, useState } from 'react';
 import { Provider } from "react-redux"
 import store from "./store/store"
 import OrderPage from './Pages/OrderPage'
+import AboutUs from './Pages/AboutUs'
+import SuccessPage from './Pages/SuccessPage'
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
            <Route path='/signup' element = {<Signup isLoggedIn={isLoggedIn}/>} />
            <Route path='/adopt-a-pet' element = {<AdoptPet isLoggedIn={isLoggedIn}/>} />
            <Route path='/ordered' element = {<OrderPage />} />
+           <Route path='/about-us' element = {<AboutUs />} />
+           <Route path='/success' element = {<SuccessPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
